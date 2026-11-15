@@ -1,0 +1,21 @@
+/* A native stretched link makes the complete card open the product. */
+.product-card--clickable{position:relative;cursor:pointer}
+.product-card--clickable .product-card__primary-link::after{content:"";position:absolute;inset:0;z-index:2;border-radius:inherit}
+.product-card--clickable .product-card__primary-link:focus-visible::after{outline:2px solid #ce1024;outline-offset:5px}
+.product-card--clickable .luxury-product-card__actions{z-index:3}
+.product-card--clickable .luxury-product-card__actions button{position:relative;z-index:3}
+body .luxury-product-card .luxury-product-card__actions button{background:#111!important;color:#fff!important;border:1px solid #ce1024!important;opacity:1;min-height:44px;box-shadow:0 3px 12px #0005}
+body .luxury-product-card .luxury-product-card__actions button:hover,body .luxury-product-card .luxury-product-card__actions button:focus-visible{background:#ce1024!important;color:#fff!important}
+body .luxury-product-card .luxury-product-card__actions button svg{stroke:#fff}
+body .hood-arrow-bubble{background:#ce1024!important;color:#fff!important}
+body .hood-arrow-bubble svg{stroke:#fff!important}
+body .hood-colour-section--animated .hood-colour-card{background:#111;border-color:#ffffff20}
+.hood-colour-card:focus-visible{outline:2px solid #ce1024;outline-offset:3px}
+.page.product-detail--editorial .product-purchase{grid-template-columns:110px minmax(0,1fr) 52px;gap:12px}
+.page.product-detail--editorial .product-quantity,.page.product-detail--editorial .product-save{background:#111;color:#fff;border:1px solid #ce1024}
+.page.product-detail--editorial .product-quantity button{color:#fff}
+.page.product-detail--editorial .product-add-to-bag{background:#111!important;color:#fff!important;border:1px solid #ce1024!important}
+.page.product-detail--editorial .product-add-to-bag:hover:not(:disabled){background:#ce1024!important}
+.page.product-detail--editorial .hood-buy-now{grid-column:1/-1;background:#ce1024;color:#fff;border:1px solid #ce1024;min-height:52px}
+.page.product-detail--editorial .product-save{grid-column:3;grid-row:1}
+@media(max-width:760px){.page.product-detail--editorial .product-purchase{grid-template-columns:88px minmax(0,1fr) 44px;gap:8px;background:#111;padding-bottom:calc(12px + env(safe-area-inset-bottom))}.page.product-detail--editorial{padding-bottom:210px}}
